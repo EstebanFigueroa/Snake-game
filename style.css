@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.title h1 {
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+body {
+    background-color: #1e9a36;
+    font-family: 'Kanit', sans-serif;
+    color: #fff;
+    font-size: xx-large;  
+}
+.snake img{
+    width: 20%;
+    position: absolute;
+    left: 80%;
+    top:55%;     
+}
+body img {
+    width: 50%;
+}
+
+#start {
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
+    padding: 0 35px;
+    border-radius: 5px;
+    background-color: greenyellow;
+    border: none;
+}
+
+#board,
+.boardinfo {
+    max-width: 500px;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    box-shadow: 2px 2px 2px rgb(73, 73, 73);
+
+}
+
+#gameover {
+    display: none;
+    font-size: medium;
+}
+
+.boardinfo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#scoreboard {
+    display: inline-flex;
+}
+
+.square {
+    aspect-ratio: 1;
+}
+
+.emptySquare {
+    background-color: rgb(255, 255, 196);
+
+}
+
+.foodSquare {
+    background-color: rgb(226, 43, 43);
+}
+
+.snakeSquare {
+    background-color: #7ff997;
+}
